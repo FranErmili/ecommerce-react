@@ -1,0 +1,20 @@
+.cartIcon {
+    width: 15px;
+    color: #ffbc0d;
+}
+
+.cartButtom {
+    width: 5rem;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #ffbc0d;
+    background-color: white;
+    transition: 300ms ease-out;
+}
+
+.cartButtom:hover {
+    background-color: #ffbc0d;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
