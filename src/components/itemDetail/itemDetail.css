@@ -1,0 +1,31 @@
+.card-item-detail-container {
+    width: 500px;
+    height: 600px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.item-detal-tittle {
+    text-align: center;
+    width: 200px;
+}
+
+.item-detail-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.item-detail-description {
+    width: 300px;
+}
+
+.item-detail-price {
+    font-weight: 500;
+}
