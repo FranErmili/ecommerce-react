@@ -1,76 +1,76 @@
 const products = [
-    {
-        "id": "1",
-        "nombre": "Triple Hamburguesa con Queso McCombo mediano",
-        "precio": "1380",
-        "ingredientes": "Hamburguesa con triple carne 100% vacuna, queso cheddar, kétchup y cebolla. Acompañada con papas fritas y bebida mediana a elección",
-        "tipo": "Combos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26200%20McCOMBO%20TRIPLE%20HAMBURGUESA%20CON%20QUESO%20Mediano.png?1639148948743"
-    },
-    {
-        "id": "2",
-        "nombre": "McCombo Mediano Triple Bacon",
-        "precio": "1900",
-        "ingredientes": "Tres carnes, dos fetas del más rico queso cheddar, cebolla, mostaza, kétchup y bacon premium como protagonista. Con papas y gaseosa mediana",
-        "tipo": "Combos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/ComboTripleBaconMediano.png?1640861422595"
-    },
-    {
-        "id": "3",
-        "nombre": "McCombo Grande Triple Bacon",
-        "precio": "2100",
-        "ingredientes": "Tres carnes, dos fetas del más rico queso cheddar, cebolla, mostaza, kétchup y bacon premium como protagonista. Con papas y gaseosa grande",
-        "tipo": "Combos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/ComboTripleBaconGrande.png?1640861305995"
-    },
-    {
-        "id": "4",
-        "nombre": "Cuarto de Libra McCombo mediano",
-        "precio": "1340",
-        "ingredientes": "Hamburguesa de carne 100% vacuna, dos fetas de queso Cheddar, kétchup, mostaza y cebolla. Acompañamiento y bebida mediana a elección",
-        "tipo": "Combos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26003%20McCOMBO%20CUARTO%20DE%20LIBRA%20CON%20QUESO%20Mediano.png?1639147283417"
-    },
-    {
-        "id": "5",
-        "nombre": "Cuarto de Libra McCombo grande",
-        "precio": "1540",
-        "ingredientes": "Hamburguesa de carne 100% vacuna, dos fetas de queso Cheddar, kétchup, mostaz, y cebolla . Acompañamiento y bebida grande a elección",
-        "tipo": "Combos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26053%20McCOMBO%20CUARTO%20DE%20LIBRA%20CON%20QUESO%20Grande.png?1639147594723"
-    },
-    {
-        "id": "6",
-        "nombre": "Doble Cuarto de Libra McCombo mediano",
-        "precio": "1680",
-        "ingredientes": "Hamburguesa doble carne 100% vacuna, dos fetas de queso Cheddar, kétchup, mostaza, cebolla y pepinillos. Acompañamiento y bebida mediana a elección",
-        "tipo": "Combos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26004%20McCOMBO%20DOBLE%20CUARTO%20DE%20LIBRA%20CON%20QUESO%20Mediano.png?1639147326040"
-    },
-    {
-        "id": "7",
-        "nombre": "Doble Cuarto de Libra McCombo grande",
-        "precio": "1880",
-        "ingredientes": "Hamburguesa con doble carne 100% vacuna, dos fetas de queso Cheddar, kétchup, mostaz, y cebolla . Acompañamiento y bebida grande a elección",
-        "tipo": "Combos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26054%20McCOMBO%20DOBLE%20CUARTO%20DE%20LIBRA%20CON%20QUESO%20Grande.png?1639147652487"
-    },
-    {
-        "id": "8",
-        "nombre": "Big Mac McCombo mediano",
-        "precio": "1340",
-        "ingredientes": "Hamburguesa con doble carne 100% vacuna, salsa Big Mac, queso derretido, cebolla, lechuga y pepino. Acompañamiento y bebida mediana a elección",
-        "tipo": "Combos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26000%20McCOMBO%20BIG%20MAC%20Mediano.png?1639147005779"
-    },
-    {
-        "id": "9",
-        "nombre": "Big Mac McCombo grande",
-        "precio": "1540",
-        "ingredientes": "Hamburguesa con doble carne 100% vacuna, salsa Big Mac, queso cheddar, cebolla, lechuga y pepino. Acompañamiento y bebida grande a elección",
-        "tipo": "Combos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26050%20McCOMBO%20BIG%20MAC%20Grande.png?1639147436353"
-    },
+    // {
+    //     "id": "1",
+    //     "nombre": "Triple Hamburguesa con Queso McCombo mediano",
+    //     "precio": "1380",
+    //     "ingredientes": "Hamburguesa con triple carne 100% vacuna, queso cheddar, kétchup y cebolla. Acompañada con papas fritas y bebida mediana a elección",
+    //     "tipo": "Combos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26200%20McCOMBO%20TRIPLE%20HAMBURGUESA%20CON%20QUESO%20Mediano.png?1639148948743"
+    // },
+    // {
+    //     "id": "2",
+    //     "nombre": "McCombo Mediano Triple Bacon",
+    //     "precio": "1900",
+    //     "ingredientes": "Tres carnes, dos fetas del más rico queso cheddar, cebolla, mostaza, kétchup y bacon premium como protagonista. Con papas y gaseosa mediana",
+    //     "tipo": "Combos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/ComboTripleBaconMediano.png?1640861422595"
+    // },
+    // {
+    //     "id": "3",
+    //     "nombre": "McCombo Grande Triple Bacon",
+    //     "precio": "2100",
+    //     "ingredientes": "Tres carnes, dos fetas del más rico queso cheddar, cebolla, mostaza, kétchup y bacon premium como protagonista. Con papas y gaseosa grande",
+    //     "tipo": "Combos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/ComboTripleBaconGrande.png?1640861305995"
+    // },
+    // {
+    //     "id": "4",
+    //     "nombre": "Cuarto de Libra McCombo mediano",
+    //     "precio": "1340",
+    //     "ingredientes": "Hamburguesa de carne 100% vacuna, dos fetas de queso Cheddar, kétchup, mostaza y cebolla. Acompañamiento y bebida mediana a elección",
+    //     "tipo": "Combos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26003%20McCOMBO%20CUARTO%20DE%20LIBRA%20CON%20QUESO%20Mediano.png?1639147283417"
+    // },
+    // {
+    //     "id": "5",
+    //     "nombre": "Cuarto de Libra McCombo grande",
+    //     "precio": "1540",
+    //     "ingredientes": "Hamburguesa de carne 100% vacuna, dos fetas de queso Cheddar, kétchup, mostaz, y cebolla . Acompañamiento y bebida grande a elección",
+    //     "tipo": "Combos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26053%20McCOMBO%20CUARTO%20DE%20LIBRA%20CON%20QUESO%20Grande.png?1639147594723"
+    // },
+    // {
+    //     "id": "6",
+    //     "nombre": "Doble Cuarto de Libra McCombo mediano",
+    //     "precio": "1680",
+    //     "ingredientes": "Hamburguesa doble carne 100% vacuna, dos fetas de queso Cheddar, kétchup, mostaza, cebolla y pepinillos. Acompañamiento y bebida mediana a elección",
+    //     "tipo": "Combos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26004%20McCOMBO%20DOBLE%20CUARTO%20DE%20LIBRA%20CON%20QUESO%20Mediano.png?1639147326040"
+    // },
+    // {
+    //     "id": "7",
+    //     "nombre": "Doble Cuarto de Libra McCombo grande",
+    //     "precio": "1880",
+    //     "ingredientes": "Hamburguesa con doble carne 100% vacuna, dos fetas de queso Cheddar, kétchup, mostaz, y cebolla . Acompañamiento y bebida grande a elección",
+    //     "tipo": "Combos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26054%20McCOMBO%20DOBLE%20CUARTO%20DE%20LIBRA%20CON%20QUESO%20Grande.png?1639147652487"
+    // },
+    // {
+    //     "id": "8",
+    //     "nombre": "Big Mac McCombo mediano",
+    //     "precio": "1340",
+    //     "ingredientes": "Hamburguesa con doble carne 100% vacuna, salsa Big Mac, queso derretido, cebolla, lechuga y pepino. Acompañamiento y bebida mediana a elección",
+    //     "tipo": "Combos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26000%20McCOMBO%20BIG%20MAC%20Mediano.png?1639147005779"
+    // },
+    // {
+    //     "id": "9",
+    //     "nombre": "Big Mac McCombo grande",
+    //     "precio": "1540",
+    //     "ingredientes": "Hamburguesa con doble carne 100% vacuna, salsa Big Mac, queso cheddar, cebolla, lechuga y pepino. Acompañamiento y bebida grande a elección",
+    //     "tipo": "Combos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26050%20McCOMBO%20BIG%20MAC%20Grande.png?1639147436353"
+    // },
     {
         "id": "10",
         "nombre": "Grand Doble Tasty McCombo mediano",
@@ -87,22 +87,22 @@ const products = [
         "tipo": "Combos",
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26937%20McCOMBO%20GRAND%20DOBLE%20TASTY%20Grande.png?1639151144087"
     },
-    {
-        "id": "12",
-        "nombre": "McPollo McCombo mediano",
-        "precio": "1300",
-        "ingredientes": "Hamburguesa con medallón de pollo frito, mayonesa y lechuga. Acompañamiento y bebida medianos a elección",
-        "tipo": "Combos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26352%20McCOMBO%20McPOLLO%20Mediano.png?1639149118691"
-    },
-    {
-        "id": "13",
-        "nombre": "McPollo McCombo grande",
-        "precio": "1500",
-        "ingredientes": "Hamburguesa con medallón de pollo frito, mayonesa y lechuga. Acompañamiento y bebida grandes a elección",
-        "tipo": "Combos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26350%20McCOMBO%20McPOLLO%20Grande.png?1639149066094"
-    },
+    // {
+    //     "id": "12",
+    //     "nombre": "McPollo McCombo mediano",
+    //     "precio": "1300",
+    //     "ingredientes": "Hamburguesa con medallón de pollo frito, mayonesa y lechuga. Acompañamiento y bebida medianos a elección",
+    //     "tipo": "Combos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26352%20McCOMBO%20McPOLLO%20Mediano.png?1639149118691"
+    // },
+    // {
+    //     "id": "13",
+    //     "nombre": "McPollo McCombo grande",
+    //     "precio": "1500",
+    //     "ingredientes": "Hamburguesa con medallón de pollo frito, mayonesa y lechuga. Acompañamiento y bebida grandes a elección",
+    //     "tipo": "Combos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26350%20McCOMBO%20McPOLLO%20Grande.png?1639149066094"
+    // },
     {
         "id": "14",
         "nombre": "McNifica McCombo mediano",
@@ -167,46 +167,46 @@ const products = [
         "tipo": "Combos",
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/upload/Images/26356%20McCOMBO%20NUGGETS%20x%2020%20Grande.png?1668538791778"
     },
-    {
-        "id": "22",
-        "nombre": "2do al 70% McCombo Cuarto de Libra mediano",
-        "precio": "1740",
-        "ingredientes": "Comprando un McCombo mediano Cuarto de Libra, el 2do McCombo mediano Cuarto de Libra lo pagás al 70% off",
-        "tipo": "Promociones",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/rrss_cupones_mym_cupon%203.png?1656527613047"
-    },
-    {
-        "id": "23",
-        "nombre": "2 McCombos Medianos Big Mac",
-        "precio": "2460",
-        "ingredientes": "2 Mccombo Mediano Big Mac",
-        "tipo": "Promociones",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/upload/Images/NGK_48594_2McCombosMBigMacDLV.png"
-    },
-    {
-        "id": "24",
-        "nombre": "2 McCombos Medianos Tasty Doble",
-        "precio": "3030",
-        "ingredientes": "2 McCombos Medianos Tasty Doble",
-        "tipo": "Promociones",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK_48174_2McCombosMTastyDoble_DLV.png?1666289882068"
-    },
-    {
-        "id": "25",
-        "nombre": "Menu Ensalada Deli con Pollo Crispy",
-        "precio": "910",
-        "ingredientes": "Menú Ensalada Deli Pollo Grille o Crispy y Bebida",
-        "tipo": "Promociones",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK_48858_MenuEnsalada%20BebidaDLV.png?1667306068675"
-    },
-    {
-        "id": "26",
-        "nombre": "Cupon Menú Deli Guacamole",
-        "precio": "1000",
-        "ingredientes": "Ensalada con tomate, lechuga, cebolla grillada, guacamole, huevo y pollo grillé o crispy. Acompañada con una gaseosa mediana a tu elección",
-        "tipo": "Promociones",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/upload/Images/NGK_48933_Cupon_Menu_Deli_Guacamole_DLV.png"
-    },
+    // {
+    //     "id": "22",
+    //     "nombre": "2do al 70% McCombo Cuarto de Libra mediano",
+    //     "precio": "1740",
+    //     "ingredientes": "Comprando un McCombo mediano Cuarto de Libra, el 2do McCombo mediano Cuarto de Libra lo pagás al 70% off",
+    //     "tipo": "Promociones",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/rrss_cupones_mym_cupon%203.png?1656527613047"
+    // },
+    // {
+    //     "id": "23",
+    //     "nombre": "2 McCombos Medianos Big Mac",
+    //     "precio": "2460",
+    //     "ingredientes": "2 Mccombo Mediano Big Mac",
+    //     "tipo": "Promociones",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/upload/Images/NGK_48594_2McCombosMBigMacDLV.png"
+    // },
+    // {
+    //     "id": "24",
+    //     "nombre": "2 McCombos Medianos Tasty Doble",
+    //     "precio": "3030",
+    //     "ingredientes": "2 McCombos Medianos Tasty Doble",
+    //     "tipo": "Promociones",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK_48174_2McCombosMTastyDoble_DLV.png?1666289882068"
+    // },
+    // {
+    //     "id": "25",
+    //     "nombre": "Menu Ensalada Deli con Pollo Crispy",
+    //     "precio": "910",
+    //     "ingredientes": "Menú Ensalada Deli Pollo Grille o Crispy y Bebida",
+    //     "tipo": "Promociones",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK_48858_MenuEnsalada%20BebidaDLV.png?1667306068675"
+    // },
+    // {
+    //     "id": "26",
+    //     "nombre": "Cupon Menú Deli Guacamole",
+    //     "precio": "1000",
+    //     "ingredientes": "Ensalada con tomate, lechuga, cebolla grillada, guacamole, huevo y pollo grillé o crispy. Acompañada con una gaseosa mediana a tu elección",
+    //     "tipo": "Promociones",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/upload/Images/NGK_48933_Cupon_Menu_Deli_Guacamole_DLV.png"
+    // },
     {
         "id": "27",
         "nombre": "2 Conos",
@@ -215,14 +215,14 @@ const products = [
         "tipo": "Promociones",
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/upload/Images/NGK_48824_2ConosDLV.png"
     },
-    {
-        "id": "28",
-        "nombre": "2 McFlurry Oreo",
-        "precio": "860",
-        "ingredientes": "2 McFlurry Oreo, elegí tu helado y salsa",
-        "tipo": "Promociones",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/cupones-genericos-500-x-500-16.png?1649331458681"
-    },
+    // {
+    //     "id": "28",
+    //     "nombre": "2 McFlurry Oreo",
+    //     "precio": "860",
+    //     "ingredientes": "2 McFlurry Oreo, elegí tu helado y salsa",
+    //     "tipo": "Promociones",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/cupones-genericos-500-x-500-16.png?1649331458681"
+    // },
     {
         "id": "29",
         "nombre": "40 OFF McCombo Mediano McPollo",
@@ -327,62 +327,62 @@ const products = [
         "tipo": "Sandwiches y Snacks",
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/1703%20GRAND%20DOBLE%20McBACON%20SOLO.png?1639074646812"
     },
-    {
-        "id": "42",
-        "nombre": "Papas Pequeñas",
-        "precio": "370",
-        "ingredientes": "Calientes, crujientes y deliciosas. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
-        "tipo": "Acompañamientos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/Papas-Chicas.png?1590086179011"
-    },
-    {
-        "id": "43",
-        "nombre": "Papas Fritas Medianas",
-        "precio": "400",
-        "ingredientes": "Calientes, crujientes y deliciosas. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
-        "tipo": "Acompañamientos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/PAPA-MEDIANA.png?1590000553996"
-    },
-    {
-        "id": "44",
-        "nombre": "Papas Fritas Grandes",
-        "precio": "420",
-        "ingredientes": "Calientes, crujientes y deliciosas. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
-        "tipo": "Acompañamientos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/PAPA-GRANDE.png?1590000621694"
-    },
-    {
-        "id": "45",
-        "nombre": "Papas Tasty",
-        "precio": "470",
-        "ingredientes": "Papas fritas con salsa Tasty. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
-        "tipo": "Acompañamientos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK-Papas%20Tasty%20Bacon.png?1657630413519"
-    },
-    {
-        "id": "46",
-        "nombre": "Papas Cheddar",
-        "precio": "470",
-        "ingredientes": "Papas fritas queso cheddaar fundido. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
-        "tipo": "Acompañamientos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/McCheddarBaconCajita.png?1657630425094"
-    },
-    {
-        "id": "47",
-        "nombre": "Papas Tasty y Bacon",
-        "precio": "500",
-        "ingredientes": "Papas con salsa Tasty y Bacon. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
-        "tipo": "Acompañamientos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/Papas%20Tasty%20Bacon.png"
-    },
-    {
-        "id": "48",
-        "nombre": "Papas Cheddar y Bacon",
-        "precio": "500",
-        "ingredientes": "Papas fritas queso cheddaar fundido y bacon. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
-        "tipo": "Acompañamientos",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK%20-%205761%20PapasCheddarBacon.png"
-    },
+    // {
+    //     "id": "42",
+    //     "nombre": "Papas Pequeñas",
+    //     "precio": "370",
+    //     "ingredientes": "Calientes, crujientes y deliciosas. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
+    //     "tipo": "Acompañamientos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/Papas-Chicas.png?1590086179011"
+    // },
+    // {
+    //     "id": "43",
+    //     "nombre": "Papas Fritas Medianas",
+    //     "precio": "400",
+    //     "ingredientes": "Calientes, crujientes y deliciosas. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
+    //     "tipo": "Acompañamientos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/PAPA-MEDIANA.png?1590000553996"
+    // },
+    // {
+    //     "id": "44",
+    //     "nombre": "Papas Fritas Grandes",
+    //     "precio": "420",
+    //     "ingredientes": "Calientes, crujientes y deliciosas. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
+    //     "tipo": "Acompañamientos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/PAPA-GRANDE.png?1590000621694"
+    // },
+    // {
+    //     "id": "45",
+    //     "nombre": "Papas Tasty",
+    //     "precio": "470",
+    //     "ingredientes": "Papas fritas con salsa Tasty. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
+    //     "tipo": "Acompañamientos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK-Papas%20Tasty%20Bacon.png?1657630413519"
+    // },
+    // {
+    //     "id": "46",
+    //     "nombre": "Papas Cheddar",
+    //     "precio": "470",
+    //     "ingredientes": "Papas fritas queso cheddaar fundido. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
+    //     "tipo": "Acompañamientos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/McCheddarBaconCajita.png?1657630425094"
+    // },
+    // {
+    //     "id": "47",
+    //     "nombre": "Papas Tasty y Bacon",
+    //     "precio": "500",
+    //     "ingredientes": "Papas con salsa Tasty y Bacon. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
+    //     "tipo": "Acompañamientos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/Papas%20Tasty%20Bacon.png"
+    // },
+    // {
+    //     "id": "48",
+    //     "nombre": "Papas Cheddar y Bacon",
+    //     "precio": "500",
+    //     "ingredientes": "Papas fritas queso cheddaar fundido y bacon. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última",
+    //     "tipo": "Acompañamientos",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK%20-%205761%20PapasCheddarBacon.png"
+    // },
     {
         "id": "49",
         "nombre": "Coca-Cola Chica",
@@ -391,22 +391,22 @@ const products = [
         "tipo": "Bebidas",
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/430%20%20%20%20%20%20%20%20%20COCA%20COLA%20CHICA.png?1600783814947"
     },
-    {
-        "id": "50",
-        "nombre": "Coca-Cola Mediana",
-        "precio": "380",
-        "ingredientes": "Refrescante gaseosa Coca Cola en tamaño mediano",
-        "tipo": "",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/500%20%20%20%20%20%20%20%20%20COCA%20COLA%20MEDIANA.png?1600783853437"
-    },
-    {
-        "id": "51",
-        "nombre": "Coca-Cola Grande",
-        "precio": "400",
-        "ingredientes": "Refrescante gaseosa Coca Cola en tamaño grande",
-        "tipo": "Bebidas",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/570%20%20%20%20%20%20%20%20%20COCA%20COLA%20GRANDE.png?1600783888669"
-    },
+    // {
+    //     "id": "50",
+    //     "nombre": "Coca-Cola Mediana",
+    //     "precio": "380",
+    //     "ingredientes": "Refrescante gaseosa Coca Cola en tamaño mediano",
+    //     "tipo": "",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/500%20%20%20%20%20%20%20%20%20COCA%20COLA%20MEDIANA.png?1600783853437"
+    // },
+    // {
+    //     "id": "51",
+    //     "nombre": "Coca-Cola Grande",
+    //     "precio": "400",
+    //     "ingredientes": "Refrescante gaseosa Coca Cola en tamaño grande",
+    //     "tipo": "Bebidas",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/570%20%20%20%20%20%20%20%20%20COCA%20COLA%20GRANDE.png?1600783888669"
+    // },
     {
         "id": "52",
         "nombre": "Sprite chica",
@@ -415,22 +415,22 @@ const products = [
         "tipo": "Bebidas",
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/7085-SPRITE-ZERO-PEQUEN%CC%83A.png?1600783957369"
     },
-    {
-        "id": "53",
-        "nombre": "Sprite Mediana",
-        "precio": "380",
-        "ingredientes": "Refrescante gaseosa Sprite sin azúcar en tamaño mediano",
-        "tipo": "Bebidas",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/7086-SPRITE-ZERO-MEDIANA.png?1600783970175"
-    },
-    {
-        "id": "54",
-        "nombre": "Sprite Grande",
-        "precio": "400",
-        "ingredientes": "Refrescante gaseosa Sprite sin azúcar en tamaño grande",
-        "tipo": "Bebidas",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/7087-SPRITE-ZERO-GRANDE.png?1600783992106"
-    },
+    // {
+    //     "id": "53",
+    //     "nombre": "Sprite Mediana",
+    //     "precio": "380",
+    //     "ingredientes": "Refrescante gaseosa Sprite sin azúcar en tamaño mediano",
+    //     "tipo": "Bebidas",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/7086-SPRITE-ZERO-MEDIANA.png?1600783970175"
+    // },
+    // {
+    //     "id": "54",
+    //     "nombre": "Sprite Grande",
+    //     "precio": "400",
+    //     "ingredientes": "Refrescante gaseosa Sprite sin azúcar en tamaño grande",
+    //     "tipo": "Bebidas",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/7087-SPRITE-ZERO-GRANDE.png?1600783992106"
+    // },
     {
         "id": "55",
         "nombre": "Fanta sin Azucar chica",
@@ -439,30 +439,30 @@ const products = [
         "tipo": "Bebidas",
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/460-FANTA-PEQUEN%CC%83A.png?1600783837648"
     },
-    {
-        "id": "56",
-        "nombre": "Fanta sin azúcar Mediana",
-        "precio": "380",
-        "ingredientes": "Refrescante gaseosa Fanta sin azúcar en tamaño mediano",
-        "tipo": "Bebidas",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/530-FANTA-MEDIANA.png?1600783876286"
-    },
-    {
-        "id": "57",
-        "nombre": "Fanta sin azúcar Grande",
-        "precio": "400",
-        "ingredientes": "Refrescante gaseosa Fanta sin azúcar en tamaño grande",
-        "tipo": "Bebidas",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/600-FANTA-GRANDE.png?1600783903320"
-    },
-    {
-        "id": "58",
-        "nombre": "Agua",
-        "precio": "300",
-        "ingredientes": "Botella de 500ml de agua mineral",
-        "tipo": "Bebidas",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/AguaMineral.png?1589998628633"
-    },
+    // {
+    //     "id": "56",
+    //     "nombre": "Fanta sin azúcar Mediana",
+    //     "precio": "380",
+    //     "ingredientes": "Refrescante gaseosa Fanta sin azúcar en tamaño mediano",
+    //     "tipo": "Bebidas",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/530-FANTA-MEDIANA.png?1600783876286"
+    // },
+    // {
+    //     "id": "57",
+    //     "nombre": "Fanta sin azúcar Grande",
+    //     "precio": "400",
+    //     "ingredientes": "Refrescante gaseosa Fanta sin azúcar en tamaño grande",
+    //     "tipo": "Bebidas",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/600-FANTA-GRANDE.png?1600783903320"
+    // },
+    // {
+    //     "id": "58",
+    //     "nombre": "Agua",
+    //     "precio": "300",
+    //     "ingredientes": "Botella de 500ml de agua mineral",
+    //     "tipo": "Bebidas",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/AguaMineral.png?1589998628633"
+    // },  
     {
         "id": "59",
         "nombre": "Jugo de Naranja",
@@ -471,30 +471,30 @@ const products = [
         "tipo": "Bebidas",
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/Jugo%20de%20naranja1.png?1639424816389"
     },
-    {
-        "id": "60",
-        "nombre": "Super Cono",
-        "precio": "190",
-        "ingredientes": "Cono de helado. Podes elegir vainilla, dulce de leche o mixto.",
-        "tipo": "Helados",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK-SuperconoDDL.png"
-    },
-    {
-        "id": "61",
-        "nombre": "Cono Croccantella",
-        "precio": "240",
-        "ingredientes": "Cono de helado con baño de chocolate crocante. Podes elegir vainilla, dulce de leche o mixto.",
-        "tipo": "Helados",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK-Cono-Croccantella.png?1616789193279"
-    },
-    {
-        "id": "62",
-        "nombre": "Sundae de Chocolate",
-        "precio": "380",
-        "ingredientes": "El helado mas rico con una salsa tibia de chocolate. Podes elegir vainilla, dulce de leche o mixto.",
-        "tipo": "Helados",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/CSO_final-250x200_sundae-chocolate.png?1604064075924"
-    },
+    // {
+    //     "id": "60",
+    //     "nombre": "Super Cono",
+    //     "precio": "190",
+    //     "ingredientes": "Cono de helado. Podes elegir vainilla, dulce de leche o mixto.",
+    //     "tipo": "Helados",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK-SuperconoDDL.png"
+    // },
+    // {
+    //     "id": "61",
+    //     "nombre": "Cono Croccantella",
+    //     "precio": "240",
+    //     "ingredientes": "Cono de helado con baño de chocolate crocante. Podes elegir vainilla, dulce de leche o mixto.",
+    //     "tipo": "Helados",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK-Cono-Croccantella.png?1616789193279"
+    // },
+    // {
+    //     "id": "62",
+    //     "nombre": "Sundae de Chocolate",
+    //     "precio": "380",
+    //     "ingredientes": "El helado mas rico con una salsa tibia de chocolate. Podes elegir vainilla, dulce de leche o mixto.",
+    //     "tipo": "Helados",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/CSO_final-250x200_sundae-chocolate.png?1604064075924"
+    // },
     {
         "id": "63",
         "nombre": "Sundae Dulce de Leche",
@@ -511,30 +511,30 @@ const products = [
         "tipo": "Helados",
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/CSO_final-250x200_sundae-frutilla.png?1604064110064"
     },
-    {
-        "id": "65",
-        "nombre": "Sundae Croccantella",
-        "precio": "420",
-        "ingredientes": "Helado, salsa caliente recuebierto con salsa de Chocoavellanas que al contacto con tu postre se transforma en un placer crocante",
-        "tipo": "Helados",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK-Sundae-Croccantella.png?1600437937793"
-    },
-    {
-        "id": "66",
-        "nombre": "McFlurry Oreo",
-        "precio": "560",
-        "ingredientes": "Un helado de vainilla que se banca compartir el protagonismo con trocitos de deliciosas galletitas Oreo y la salsa que elijas. Amalo hasta el final",
-        "tipo": "Helados",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/McFlurryOreosinFondo.png?1590086627593"
-    },
-    {
-        "id": "67",
-        "nombre": "McFlurry KitKat",
-        "precio": "560",
-        "ingredientes": "Trocitos de Kit Kat con helado y salsa tibia a elección",
-        "tipo": "Helados",
-        "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/KitKat_sinfondo.png?1590087161362"
-    },
+    // {
+    //     "id": "65",
+    //     "nombre": "Sundae Croccantella",
+    //     "precio": "420",
+    //     "ingredientes": "Helado, salsa caliente recuebierto con salsa de Chocoavellanas que al contacto con tu postre se transforma en un placer crocante",
+    //     "tipo": "Helados",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/NGK-Sundae-Croccantella.png?1600437937793"
+    // },
+    // {
+    //     "id": "66",
+    //     "nombre": "McFlurry Oreo",
+    //     "precio": "560",
+    //     "ingredientes": "Un helado de vainilla que se banca compartir el protagonismo con trocitos de deliciosas galletitas Oreo y la salsa que elijas. Amalo hasta el final",
+    //     "tipo": "Helados",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/McFlurryOreosinFondo.png?1590086627593"
+    // },
+    // {
+    //     "id": "67",
+    //     "nombre": "McFlurry KitKat",
+    //     "precio": "560",
+    //     "ingredientes": "Trocitos de Kit Kat con helado y salsa tibia a elección",
+    //     "tipo": "Helados",
+    //     "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/KitKat_sinfondo.png?1590087161362"
+    // },
     {
         "id": "68",
         "nombre": "McFlurry Oreo Croccantella",
@@ -560,7 +560,7 @@ const products = [
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/26968_NGK_Ensalada_Gauacamole_pollo_crispy+bebida.png"
     },
     {
-        "id": "70",
+        "id": "71",
         "nombre": "Ensalada Deli Guacamole",
         "precio": "1070",
         "ingredientes": "Ensalada con proteína a elección, tomate, lechuga, cebolla caramelizada, huevo y guacamole.",
@@ -568,7 +568,7 @@ const products = [
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/upload/Images/204_NGK_Ensalada_Deli_Guacamole_Pollo_Crispy.png"
     },
     {
-        "id": "70",
+        "id": "72",
         "nombre": "Ensalada Deli",
         "precio": "900",
         "ingredientes": "Ensalada con ingredientes tradicionales: tomate, lechuga, cebolla fresca, una exquisita combinación entre los vegetales, texturas crocantes y un dressing",
@@ -576,7 +576,7 @@ const products = [
         "imgUrl": "https://rfm2latam.mcd.com/rfm2OnlineApp/images/24/en_US/463%20500x500_Ensalada-sin-pollo.png?1632954269736"
     },
     {
-        "id": "70",
+        "id": "73",
         "nombre": "Menú Ensalada Deli con bebida",
         "precio": "1120",
         "ingredientes": "Ensalada con ingredientes tradicionales: tomate, lechuga, cebolla fresca, una exquisita combinación entre los vegetales, texturas crocantes y un dressing con bebida a elección",

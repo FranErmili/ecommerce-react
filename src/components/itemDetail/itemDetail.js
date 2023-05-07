@@ -1,27 +1,42 @@
-import './itemDetail.css';
-import ItemCount from '../itemCount/itemCount';
+import "./itemDetail.css";
 
-const ItemDetail = ({ nombre, precio, ingredientes, imgUrl}) => {
-    return ( 
-        <div className="card-item-detail-container"> 
-            <div>
-                <h2 className='item-detal-tittle'>{nombre}</h2>
-            </div>
-            <picture>
-                <img className="item-detail-img" src={imgUrl} alt={nombre}/>
-            </picture>
-             
-            <div>
-                <p className='item-detail-description'>{ingredientes}</p>
-            </div>
+import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
 
-            <div>
-                <h3 className='item-detail-price'>Precio: $ {precio}</h3>
-            </div>
+import { CartContext } from "../context/cartContext";
+import ItemCount from "../itemCount/itemCount";
 
-            <ItemCount initialStock={15}/>
-        </div>
-    )
-}
+const ItemDetail = ({ stock, id, name, description, price, imgUrl }) => {
+  const [quantityAded, setQuantityAdded] = useState(null);
+  const { addToCart } = useContext(CartContext);
+  
+  const handleOnAdd = (quantity) => {
+    setQuantityAdded(quantity);
 
-export default ItemDetail
+    const item = {
+      id,name, price, description,stock
+    };
+
+    addToCart(item, quantity);
+  };
+
+
+  return (
+    <div className="card-item-detail-container">
+        <h2 className="item-detal-tittle">{name}</h2>
+        <img className="item-detail-img" src={imgUrl} alt={name} />
+        <p className="item-detail-description">{description}</p>
+        <h3 className="item-detail-price">Precio: $ {price}</h3>
+
+      <div>
+        {quantityAded !== null ? (
+          <Link to="/cart">Ir al Carrito</Link>
+        ) : (
+          <ItemCount initialStock={stock} onAdd={handleOnAdd} />
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default ItemDetail;

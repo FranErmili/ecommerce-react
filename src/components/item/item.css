@@ -1,22 +1,29 @@
 .card-container {
-    width: 250px;
-    height: 300px;
-    border: 1px solid lightslategray;
+    width: 16rem;
+    height: 22rem;
+    padding: 20px 10px;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    box-shadow:  6px 6px 9px #cacaca,
+             -6px -6px 9px #f6f6f6;
+
+}
+.card-container:hover{
+    background-color: #ededed;
 }
 
 .card-tittle {
+
     text-align: center;
     width: 200px;
 }
 
 .card-img {
-    width: 150px;
-    height: 150px;
+    width: 12rem;
+    height: 12rem;
     border-radius: 5px;
 }
 

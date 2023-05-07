@@ -1,5 +1,5 @@
-.item-detail-container {
-    display: flex;
+.item-detail-container{
+    display: grid;
+    gap: 3rem;
     justify-content: center;
-    align-items: center;
 }
