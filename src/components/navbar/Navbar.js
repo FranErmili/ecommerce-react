@@ -1,7 +1,9 @@
 import './Navbar.css';
 import CartWidget from '../cartWidget/cartWidget.js';
 import logo from './assets/logo-mcdelivery.svg'
+import MenuIcon from './menu-icon.svg'
 import { NavLink, Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 
 
 const NavBar = () => {
@@ -9,9 +11,18 @@ const NavBar = () => {
     const location = useLocation();
     const currentPath = location.pathname;
 
+    const [classname, setClassname] = useState('menuContainer');
+    
+    const openMenu = () => {
+        setClassname(classname === 'menuContainer' ? 'menuContainer openMenu' : 'menuContainer');
+    }
+
     return (
         <nav className="navbarContainer">
             <div className='header'>
+                <button onClick={openMenu} className='menu-icon'>
+                    <img src={MenuIcon} ></img>
+                </button>
                 <Link to="/">
                     <img src={logo} alt="logo Fran burguers" />
                 </Link>
@@ -21,7 +32,7 @@ const NavBar = () => {
                 <CartWidget />
             </div>
 
-            <div className='menuContainer'>
+            <div className={classname}>
                 <div className="listContainer">
                     <div className={currentPath === '/category/Promociones' ? 'listItemContainer active' : 'listItemContainer'} >
                         <NavLink exact className='listItem' to={`/category/Promociones`} >Promociones</NavLink>

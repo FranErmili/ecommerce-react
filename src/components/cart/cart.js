@@ -1,63 +1,53 @@
+import "./cart.css";
+
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/cartContext";
+
 import CartItem from "../cartItem/cartItem.js"
 
 
 const Cart = ({ greeting }) => {
     const { cartList, clearCart } = useContext(CartContext)
 
+    const total = cartList.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+
     if (cartList.length === 0) {
         return (
-            <div>
-                <h2>TU CARRITO ESTÁ VACÍO</h2>
-                <button><Link to={'/'}>Ir al menú</Link></button>
-
+            <div className='container-father'>
+                <div className="cart-container">
+                    <h1>TU CARRITO ESTÁ VACÍO</h1>
+                    <button className="btn-item-detail"><Link to={'/'}>Ir al menú</Link></button>
+                </div>
             </div>
         )
     } else {
         return (
-            <div>
-                <h2>{greeting}</h2>
-                <div> {cartList.map((item) => (
-                    <CartItem
-                        key={item.id}
-                        id={item.id}
-                        nombre={item.nombre}
-                        precio={item.precio}
-                        quantity={item.quantity}
-                    />
-                ))}</div>
-                <div>
-                    <h2> TOTAL: $5000</h2>
+            <div className='container-father'>
+                <div className="cart-container">
+                    <h1>{greeting}</h1>
+                    <div className="cart-itemList"> {cartList.map((item) => (
+                        <CartItem
+                            key={item.id}
+                            id={item.id}
+                            name={item.name}
+                            price={item.price}
+                            quantity={item.quantity}
+                            imgUrl={item.imgUrl}
+                        />
+                    ))}</div>
+
+                    <h2> TOTAL: ${total}</h2>
+                    <div className="cart-btns">
+                        <button onClick={clearCart} className="btn-itemCart-detail" >Vaciar carrito</button>
+                        <button className="btn-itemCart-detail" >
+                            <Link to={"/checkout"}>Finalizar compra</Link>
+                        </button>
+                    </div>
                 </div>
-                <button onClick={clearCart} >Vaciar carrito</button>
-                <button>
-                    <Link to={"/checkout"} />
-                    Finalizar compra</button>
             </div>
         )
     }
 }
 
 export default Cart;
-// import { useContext } from "react"
-// import { CartContext } from "../context/cartContext"
-// import { Link } from "react-router-dom"
-// import CartItem from "../cartItem/cartItem"
-
-
-//     return (
-//         <div> {cart.map(p => <CartItem key={p.id} {...p} />)}
-//             <h1> TOTAL: ${total}</h1>
-//             <button onClick={() => clearCart()} >
-//                 Eliminar carritos
-//             </button>
-//             <Link to='/checkout'>checkout</Link>
-
-//         </div>
-//     )
-
-// }
-
-// export default Cart

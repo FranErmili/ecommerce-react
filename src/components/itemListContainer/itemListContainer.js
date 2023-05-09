@@ -10,10 +10,11 @@ import ItemList from '../itemList/itemList';
 
 
 const ItemListContainer = ({ greeting }) => {
+
+    const { category } = useParams();
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState([true])
 
-    const { category } = useParams();
 
     useEffect(() => {
         setLoading(true)
@@ -47,7 +48,7 @@ const ItemListContainer = ({ greeting }) => {
                 </div>
             ) : (
                 <div className='itemList-container'>
-                    <h1>{greeting}</h1>
+                    <h1>{greeting} {category}</h1>
                     <ItemList products={products}></ItemList>
                 </div>
             )}

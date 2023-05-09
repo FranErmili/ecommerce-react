@@ -3,7 +3,7 @@
     color: #ffbc0d;
 }
 
-.cartButtom {
+.cartButton {
     width: 5rem;
     padding: 5px 10px;
     border-radius: 15px;
@@ -14,7 +14,7 @@
     transition: 300ms ease-out;
 }
 
-.cartButtom:hover {
+.cartButton:hover {
     background-color: #ffbc0d;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }

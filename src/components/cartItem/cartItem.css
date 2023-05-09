@@ -1,0 +1,24 @@
+.card-itemCart-container {
+    max-width: 80rem;
+    padding: 15px 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
+    gap: 1rem;
+    justify-content: space-between;
+    text-align: start;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 6px 6px 9px #cacaca, -6px -6px 9px #f6f6f6;
+}
+.delete-icon{
+    border-radius: 5px; 
+    border: 0px;
+    width: 3rem;
+}
+
+@media screen and (max-width: 564px) {
+    .card-itemCart-container {
+        grid-template-columns: 1fr
+    }
+
+}

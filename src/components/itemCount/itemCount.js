@@ -1,7 +1,8 @@
 import "./itemCount.css";
 import { useState } from "react";
 
-const ItemCount = ({ initialStock, handleOnAdd }) => {
+
+const ItemCount = ({ initialStock, onAdd }) => {
   const [quantity, setquantity] = useState(0);
   const [stock, setStock] = useState(initialStock);
 
@@ -17,14 +18,14 @@ const ItemCount = ({ initialStock, handleOnAdd }) => {
 
   const handleAdd = () => {
     console.log("Productos agregados al carrito= ", quantity);
-    handleOnAdd();
+    onAdd(quantity);
   };
 
   const showDisponibility = () => {
     if (stock <= 0) {
-      return "No hay stock";
+      return "Sin Stock";
     } else {
-      return "Agregar al carrito";
+      return "Añadir al pedido";
     }
   };
 
@@ -47,8 +48,12 @@ const ItemCount = ({ initialStock, handleOnAdd }) => {
           +
         </button>
       </div>
+
       <button className="btn btn-add-cart"
-  onClick={handleAdd} disabled={stock <= 0}>{showDisponibility()}</button>
+        onClick={handleAdd} disabled={stock <= 0}>
+        {showDisponibility()}
+      </button>
+
     </div>
   );
 };

@@ -10,18 +10,20 @@ import ItemDetail from "../itemDetail/itemDetail";
 
 
 const ItemDetailContainer = ({ greeting }) => {
-    const [product, setProduct] = useState(null)
+    const [product, setProduct] = useState()
     const [loading, setLoading] = useState(true)
 
     const { itemId } = useParams()
 
     useEffect(() => {
         setLoading(true);
-        const docRef = doc(db, "products", itemId);
+
+        const docRef = doc(db, "products", itemId)
+    
         getDoc(docRef)
           .then(response => {
             const data = response.data();
-            const productAdapted = { id: response.id, ...data };
+            const productAdapted = { id: response.id, ...data }
             setProduct(productAdapted);
           })
           .catch(error => {
@@ -42,7 +44,7 @@ const ItemDetailContainer = ({ greeting }) => {
       ) : (
         <div className="item-detail-container">
           <h1>{greeting}</h1>
-          <ItemDetail { ...product } />
+          <ItemDetail {...product } />
         </div>
       )}
     </div>

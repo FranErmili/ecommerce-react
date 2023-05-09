@@ -1,0 +1,38 @@
+.container-father {
+    display: grid;
+    justify-content: center;
+}
+
+.cart-container{
+    display: grid;
+    gap: 3rem;
+}
+
+.cart-itemList{
+    display: grid;
+    gap: 1rem;
+}
+
+.cart-btns{
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    
+}
+
+.btn-itemCart-detail{
+    width: 30rem;
+    border: 0px;
+    color: black;
+    background-color: #ffbc0d;
+    transition: 300ms ease-out;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 564px) {
+    .btn-itemCart-detail{
+        width: 15rem;
+    }
+}

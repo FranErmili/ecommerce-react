@@ -9,14 +9,13 @@
     border-radius: 5px;
     box-shadow:  6px 6px 9px #cacaca,
              -6px -6px 9px #f6f6f6;
-
 }
+
 .card-container:hover{
     background-color: #ededed;
 }
 
 .card-tittle {
-
     text-align: center;
     width: 200px;
 }
@@ -34,15 +33,18 @@
 .btn-item-detail {
     width: 10rem;
     padding: 5px 10px;
-    border-radius: 15px;
+    border-radius: 5px;
     display: flex;
-    justify-content: space-around;
-    border: 2px solid #ffbc0d;
-    background-color: white;
+    background-color: #ffbc0d;
     transition: 300ms ease-out;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-item-detail:hover {
-    background-color: #ffbc0d;
+    background-color: #E7AC13;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
+

@@ -66,7 +66,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .container-father {
-    margin: 4rem 1rem;
+    margin: 4rem 0,5rem;
   }
 }
 
