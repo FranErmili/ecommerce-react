@@ -1,0 +1,7 @@
+.footer-container {
+    padding: 1rem 2rem;
+    background-color: #ededed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}

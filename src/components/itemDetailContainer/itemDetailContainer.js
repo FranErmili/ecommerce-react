@@ -3,39 +3,50 @@ import "./itemDetailContainer.css";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import { getDoc, doc } from 'firebase/firestore';
+import { getDoc, doc, getDocs, collection } from 'firebase/firestore';
 import { db } from '../../firestoreService/firebaseConfig';
 
 import ItemDetail from "../itemDetail/itemDetail";
 
 
 const ItemDetailContainer = ({ greeting }) => {
-    const [product, setProduct] = useState()
-    const [loading, setLoading] = useState(true)
+  const [product, setProduct] = useState({})
+  const [loading, setLoading] = useState(true)
 
-    const { itemId } = useParams()
+  const { itemId } = useParams()
 
-    useEffect(() => {
-        setLoading(true);
+  useEffect(() => {
+    setLoading(true);
 
-        const docRef = doc(db, "products", itemId)
-    
-        getDoc(docRef)
-          .then(response => {
-            const data = response.data();
-            const productAdapted = { id: response.id, ...data }
-            setProduct(productAdapted);
-          })
-          .catch(error => {
-            console.log(error);
-          })
-          .finally(() => {
-            setLoading(false);
-          });
-      }, [itemId]);
+    const docRef = doc(db, "products", itemId)
+    const collectionRef = collection(db, 'products');
 
-    return (
-    <div className="container-father">
+    getDoc(docRef)
+      .then(response => {
+        const data = response.data();
+        const productAdapted = { id: response.id, ...data }
+        setProduct(productAdapted);
+      })
+      .catch(error => {
+        console.log(error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+
+    getDocs(collectionRef).then((snapshot) => {
+      const products = snapshot.docs.map((doc) => {
+        const product = { id: doc.id, ...doc.data() };
+        return product;
+      });
+      const productById = products.find((product) => product.id === itemId);
+      setProduct(productById);
+      setLoading(false);
+    });
+  }, [itemId]);
+
+  return (
+    <main className="container-father">
       {loading ? (
         <div className="loader-container">
           <span className="text-loader">Cargando...</span>
@@ -44,11 +55,12 @@ const ItemDetailContainer = ({ greeting }) => {
       ) : (
         <div className="item-detail-container">
           <h1>{greeting}</h1>
-          <ItemDetail {...product } />
+          {product ? <ItemDetail {...product} /> : <h2>Ese producto no existe.</h2>}
         </div>
       )}
-    </div>
+    </main>
   );
+
 };
 
 export default ItemDetailContainer;

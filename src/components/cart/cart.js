@@ -14,16 +14,16 @@ const Cart = ({ greeting }) => {
 
     if (cartList.length === 0) {
         return (
-            <div className='container-father'>
+            <main className='container-father'>
                 <div className="cart-container">
                     <h1>TU CARRITO ESTÁ VACÍO</h1>
-                    <button className="btn-item-detail"><Link to={'/'}>Ir al menú</Link></button>
+                    <button className="btn-itemCart-detail"><Link className="link" to={'/'}>Ir al menú</Link></button>
                 </div>
-            </div>
+            </main>
         )
     } else {
         return (
-            <div className='container-father'>
+            <main className='container-father'>
                 <div className="cart-container">
                     <h1>{greeting}</h1>
                     <div className="cart-itemList"> {cartList.map((item) => (
@@ -41,11 +41,11 @@ const Cart = ({ greeting }) => {
                     <div className="cart-btns">
                         <button onClick={clearCart} className="btn-itemCart-detail" >Vaciar carrito</button>
                         <button className="btn-itemCart-detail" >
-                            <Link to={"/checkout"}>Finalizar compra</Link>
+                            <Link className="link" to={"/checkout"}>Finalizar compra</Link>
                         </button>
                     </div>
                 </div>
-            </div>
+            </main>
         )
     }
 }

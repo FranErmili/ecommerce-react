@@ -1,13 +1,11 @@
 import "./cartItem.css"
 import Delete from './delete.svg';
 
-import ItemCount from "../itemCount/itemCount";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { CartContext } from "../context/cartContext";
-import { Form } from "react-router-dom";
 
 const CartItem = ({ id, name, price, quantity }) => {
-    const { deleteItem } = useContext(CartContext);
+    const { deleteItem} = useContext(CartContext);
     
     const subtotal = price * quantity;
 

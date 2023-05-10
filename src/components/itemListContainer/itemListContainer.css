@@ -1,5 +1,6 @@
 .container-father {
-  margin: 4rem
+  margin: 4rem;
+  height: 100%;
 }
 
 .itemList-container {

@@ -1,7 +1,6 @@
-.item-detail-container{
+.checkout-container{
     display: flex;
     flex-direction: column;
     gap: 3rem;
     justify-content: start;
-
 }

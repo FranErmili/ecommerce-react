@@ -1,7 +1,9 @@
 import './Navbar.css';
+
 import CartWidget from '../cartWidget/cartWidget.js';
 import logo from './assets/logo-mcdelivery.svg'
-import MenuIcon from './menu-icon.svg'
+import MenuIcon from './assets/menu-icon.svg'
+
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -40,14 +42,14 @@ const NavBar = () => {
                     <div className={currentPath === '/category/Combos' ? 'listItemContainer active' : 'listItemContainer'}>
                         <NavLink exact className='listItem' to={`/category/Combos`}  >Combos</NavLink>
                     </div>
-                    <div className={currentPath === '/category/Sandwiches%20y%20Snacks' ? 'listItemContainer active' : 'listItemContainer'}>
-                        <NavLink exact className='listItem' to={`/category/Sandwiches y Snacks`} >Hamburguesas</NavLink>
+                    <div className={currentPath === '/category/Hamburguesas' ? 'listItemContainer active' : 'listItemContainer'}>
+                        <NavLink exact className='listItem' to={`/category/Hamburguesas`} >Hamburguesas</NavLink>
                     </div>
                     <div className={currentPath === '/category/Bebidas' ? 'listItemContainer active' : 'listItemContainer'}>
                         <NavLink exact className='listItem' to={`/category/Bebidas`} >Bebidas</NavLink>
                     </div>
                     <div className={currentPath === '/category/Acompañamientos' ? 'listItemContainer active' : 'listItemContainer'}>
-                        <NavLink exact className='listItem' to={`/category/Acompañamientos`} >Acompañamiento</NavLink>
+                        <NavLink exact className='listItem' to={`/category/Acompañamientos`} >Acompañamientos</NavLink>
                     </div>
                     <div className={currentPath === '/category/Helados' ? 'listItemContainer active' : 'listItemContainer'}>
                         <NavLink exact className='listItem' to={`/category/Helados`} >Helados</NavLink>
